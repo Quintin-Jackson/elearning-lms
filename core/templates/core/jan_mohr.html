@@ -1,0 +1,101 @@
+{% extends "core/base.html" %} {% block content %}
+<!--================Header Menu Area =================-->
+        <header class="header_area">
+           	<div class="top_menu">
+           		<div class="container">
+           			<div class="top_inner">
+           				<div class="float-left">
+           					<a href="#">Visit Us</a>
+           					<a href="#">Online Support</a>
+           				</div>
+           				<div class="float-right">
+           					<ul class="list header_socila">
+           						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+           						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+           						<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+           						<li><a href="#"><i class="fa fa-behance"></i></a></li>
+           					</ul>
+           				</div>
+           			</div>
+           		</div>
+           	</div>
+            <div class="main_menu" id="mainNav">
+            	<nav class="navbar navbar-expand-lg navbar-light">
+					<div class="container">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<a class="navbar-brand jmlogo" href="{% url 'jan_mohr' %}"><img src="../static/img/jlogo.png" alt=""><img src="../static/img/jlogo.png" alt=""></a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+							<ul class="nav navbar-nav menu_nav ml-auto">
+								<li class="nav-item active"><a class="nav-link" href="{% url 'home' %}">Home</a></li> 
+								<li class="nav-item"><a class="nav-link" href="{% url 'error' %}">Login</a></li> 
+								<li class="nav-item"><a class="nav-link" href="{% url 'error' %}">Signup</a></li>
+							</ul>
+						</div> 
+					</div>
+            	</nav>
+            </div>
+        </header>
+        <!--================Header Menu Area =================-->
+        
+        <!--================Home Banner Area =================-->
+        <section class="banner_area">
+            <div class="banner_inner d-flex align-items-center">
+            	<div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
+				<div class="container">
+					<div class="banner_content text-center">
+						<h2>Jan Möhr Secondary School</h2>
+						<div class="page_link">
+							<a>Home</a>
+							<a>Registration</a>
+							<a>Jan Möhr Details</a>
+						</div>
+					</div>
+				</div>
+            </div>
+        </section>
+        <!--================End Home Banner Area =================-->
+    <main>
+        <!--================Portfolio Details Area =================-->
+        <section class="portfolio p_120">
+        	<div class="container">
+                <div class="section-heading my-5 text-center">
+					<h4 class="text-black">School</h4>
+					<h1 class="display-4">Background</h1>
+				</div>
+        		<div class="portfolio_details_inner">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="left_img">
+								<img class="img-fluid" src="../static/img/jm1.jpg" alt="">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="portfolio_right_text">
+								<h4>Jan Möhr Secondary School</h4>
+								<p>Welcome to the eLearning Alliance Portal of Jan Möhr Secondary School. The schools online learning portal
+                                    is dedicated only for learners who attend the school.</p>
+								<ul class="list">
+									<li><span>Rating</span>: <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></li>
+									<li><span>Tel:</span>:  061 237 555</li>
+									<li><span>Website</span>:  Under Construction</li>
+									<li><span>Location</span>:  Aries, Windhoek</li>
+								</ul>
+							</div>
+						</div>
+			            <p>Jan Möhr Secondary School is a school situated in Windhoek, Namibia. The school was founded on March 2, 1962 and is one of the oldest schools in Namibia.<br><br>
+                        The school is known for its excellent academic record. The school has continued to achieve an annual 90% and 60% pass rate for grade 10 and 12 results respectively. The school was originally known as the Windhoek West High School (WHHS) but was later changed to Jan Möhr Secondary School, being named after the then Director of Education Mr JD Mohr. The school's motto is 'Altyd My Beste', 
+                            which means 'Always My Best' when translated into English.</p>
+        		</div>
+        	</div>
+            <hr style="width:70%; margin-top:3rem;">
+        </section>
+        <!--================End Portfolio Details Area =================-->
+        <a id="back2Top" title="Back to top" href="#home">&#10148;</a>
+    </main>
+{% endblock content %}
